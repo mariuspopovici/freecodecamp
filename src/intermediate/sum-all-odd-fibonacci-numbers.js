@@ -25,4 +25,4 @@ function sumFibs(num) {
     .reduce((acc, val) => (acc += val), 0); // then we sum them all up
 }
 
-console.log(sumFibs(10));
+export { sumFibs };

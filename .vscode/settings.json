@@ -1,7 +1,13 @@
 {
-    "editor.tabSize": 2,
-    "editor.mouseWheelZoom": true,
-    "prettier.endOfLine": "lf",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
+  "editor.tabSize": 2,
+  "editor.mouseWheelZoom": true,
+  "prettier.endOfLine": "lf",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": false,
+  "code-runner.executorMap": {
+    "javascript": "$workspaceRoot/node_modules/.bin/babel-node $fullFileName"
+  }
 }

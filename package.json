@@ -4,19 +4,32 @@
   "description": "Starting point for any Javascript project. Comes with preconfigured linting and formatting (Eslint + Prettier) and more.",
   "main": "index.js",
   "dependencies": {
+    "@babel/runtime": "^7.7.7",
     "tesseract.js": "^2.0.0-beta.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "@istanbuljs/nyc-config-babel": "^3.0.0",
+    "babel-plugin-istanbul": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-prettier": "^3.1.2",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "riteway": "^6.1.1",
+    "tap-nirvana": "^1.1.0"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "nyc riteway test/**/*-test.js | tap-nirvana",
     "lint": "eslint --fix . && echo 'Lint complete.'"
   },
   "keywords": [

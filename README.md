@@ -4,8 +4,12 @@ My own implementations of the freeCodeCamp Javascript algorithm challenges.
 
 Implementations are organized as:
 
-- Basic Algorithms (basic)
-- Intermediate (intermediate)
-- Projects (projects)
+- Basic Algorithms (/src/basic)
+- Intermediate (src/intermediate)
+- Projects (src/projects)
 
-[Check](https://www.freecodecamp.org/mariusp) out my freeCodeCamp Profile.
+Check out my **freeCodeCamp** [profile](https://www.freecodecamp.org/mariusp).
+
+## Unit Tests
+
+Run `npm test` from terminal.
