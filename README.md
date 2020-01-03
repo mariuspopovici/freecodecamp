@@ -1,6 +1,7 @@
 # freeCodeCamp.org Javascript Algorithm and Data Structures Certification
 
 My own implementations of the freeCodeCamp Javascript algorithm challenges.
+Complete VSCode project folder including configuration for ESLin, Prettier, Babel etc.
 
 Implementations are organized as:
 
@@ -10,6 +11,6 @@ Implementations are organized as:
 
 Check out my **freeCodeCamp** [profile](https://www.freecodecamp.org/mariusp).
 
-## Unit Tests
+## [RITEway](https://github.com/ericelliott/riteway) Unit Tests
 
 Run `npm test` from terminal.
