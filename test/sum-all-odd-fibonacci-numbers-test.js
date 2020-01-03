@@ -1,7 +1,7 @@
 import { describe } from 'riteway';
 import { sumFibs } from '../src/intermediate/sum-all-odd-fibonacci-numbers.js';
 
-describe('sum()', async assert => {
+describe('sumFibs()', async assert => {
   assert({
     given: '1',
     should: 'return a number',
