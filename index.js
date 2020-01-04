@@ -1,7 +1,3 @@
-import { dropElements } from './src/intermediate/drop-it';
+import { steamrollArray } from './src/intermediate/steamroller';
 
-console.log(
-  dropElements([0, 1, 0, 1], function(n) {
-    return n === 1;
-  })
-);
+console.log(steamrollArray([1, [2], [3, [[4]]]]));

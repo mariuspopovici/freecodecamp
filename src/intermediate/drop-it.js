@@ -8,6 +8,7 @@
  * @param {Array} arr
  * @param {Function} func
  */
+// eslint-disable-next-line no-unused-vars
 const dropElements = (arr, func) => {
   let result = [];
   for (const [index, element] of arr.entries()) {
