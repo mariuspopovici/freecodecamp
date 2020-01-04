@@ -1,7 +1,7 @@
 # freeCodeCamp.org Javascript Algorithm and Data Structures Certification
 
 My own implementations of the freeCodeCamp Javascript algorithm challenges.
-Complete VSCode project folder including configuration for ESLin, Prettier, Babel etc.
+Complete VSCode project folder including configuration for ESLint, Prettier, Babel etc.
 
 Implementations are organized as:
 

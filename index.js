@@ -1,3 +1,7 @@
-import { genPrimes } from './src/intermediate/sum-all-primes';
+import { dropElements } from './src/intermediate/drop-it';
 
-genPrimes(10);
+console.log(
+  dropElements([0, 1, 0, 1], function(n) {
+    return n === 1;
+  })
+);
