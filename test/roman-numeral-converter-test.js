@@ -1,5 +1,5 @@
 import { describe } from 'riteway';
-import { convertToRoman } from '../src/intermediate/roman-numeral-converter';
+import { convertToRoman } from '../src/projects/roman-numeral-converter';
 
 describe('convertToRoman()', async assert => {
   assert({

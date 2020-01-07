@@ -1,5 +1,5 @@
 import { describe } from 'riteway';
-import { rot13 } from '../src/intermediate/caesars-cipher';
+import { rot13 } from '../src/projects/caesars-cipher';
 
 describe('rot13()', async assert => {
   assert({
