@@ -34,16 +34,16 @@ const fizbuzzClassic = () => {
  * Generates sequential numbers in the [1, n] range.
  * @param {Number} n # of elements to generate
  */
-const makeArray = n => [...Array(n + 1).keys()].slice(1);
+const genArray = n => Array.from({ length: n }, (_, i) => i + 1);
 
-const extremeFizzBuzz = (n = 100, predicates) => {
-  makeArray(n).forEach(number => {
+const fizzBuzzOnSteroids = (n = 100, predicates) => {
+  genArray(n).forEach(number => {
     const out = predicates.reduce((result, fun) => result + fun(number), '');
     console.log(out === '' ? number : out);
   });
 };
 
-extremeFizzBuzz(100, [
-  n => (n % 5 === 0 ? 'Buzz' : ''),
-  n => (n % 3 === 0 ? 'Fizz' : '')
+fizzBuzzOnSteroids(100, [
+  n => (n % 3 === 0 ? 'Fizz' : ''),
+  n => (n % 5 === 0 ? 'Buzz' : '')
 ]);
