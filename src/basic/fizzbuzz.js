@@ -47,3 +47,5 @@ fizzBuzzOnSteroids(100, [
   n => (n % 3 === 0 ? 'Fizz' : ''),
   n => (n % 5 === 0 ? 'Buzz' : '')
 ]);
+
+export { fizzBuzzOnSteroids as fizzBuzz, fizbuzzClassic };
