@@ -25,7 +25,6 @@ const multiply = (num1, num2, debug = false) => {
   let zeroes = '';
 
   if (num1 === num1.replace(/./g, '0') || num2 === num2.replace(/./g, '0')) {
-    console.log('zero');
     return '0';
   }
 
