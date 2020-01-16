@@ -7,20 +7,18 @@
  * @return {number[]}
  */
 const plusOne = digits => {
-  let carry = true;
-  let carryAmount = 1;
-  for (let i = digits.length - 1; i >= 0 && carry; i--) {
-    let sum = digits[i] + carryAmount;
+  let carry = 1;
+  for (let i = digits.length - 1; i >= 0 && carry > 0; i--) {
+    let sum = digits[i] + carry;
     digits[i] = sum % 10;
-    carryAmount = Math.floor(sum / 10);
-    carry = carryAmount > 0;
+    carry = Math.floor(sum / 10);
   }
 
-  if (carryAmount > 0) {
-    digits = [carryAmount, ...digits];
+  if (carry > 0) {
+    digits = [carry, ...digits];
   }
 
   return digits;
 };
 
-console.log(plusOne([9, 9]));
+console.log(plusOne([1, 2, 3]));
