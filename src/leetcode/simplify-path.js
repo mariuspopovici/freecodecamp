@@ -9,23 +9,44 @@
  * @param {string} path
  * @return {string}
  */
-var simplifyPath = function(path) {
-  let canonical = [];
+const simplifyPath = function(path) {
+  let directories = [];
   path.split('/').forEach(element => {
     if (element === '..') {
       // go up a level
-      canonical.pop();
+      directories.pop();
     } else if (element === '.' || element === '') {
       // do nothing
     } else {
       // go down a level
-      canonical.push(element);
+      directories.push(element);
     }
   });
 
-  return '/' + canonical.join('/');
+  return '/' + directories.join('/');
 };
 
-console.log(simplifyPath('a/b/c/../d'));
+const simplifyPathReduce = path => {
+  return (
+    '/' +
+    path
+      .split('/')
+      .reduce((acc, element) => {
+        if (element === '..') {
+          // go up a level
+          acc.pop();
+        } else if (element === '.' || element === '') {
+          // do nothing
+        } else {
+          // go down a level
+          acc.push(element);
+        }
+        return acc;
+      }, [])
+      .join('/')
+  );
+};
 
-export { simplifyPath };
+console.log(simplifyPathReduce('a/b/c/../d'));
+
+export { simplifyPath, simplifyPathReduce };
