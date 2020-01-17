@@ -2,7 +2,7 @@
  * Given two binary strings, return their sum (also a binary string).
  * The input strings are both non-empty and contains only characters 1 or 0.
  *
- * The binarry adder is implemented using several 1 bit full adders.
+ * The binarry adder is implemented 1 bit full adders.
  *
  * @param {string} a
  * @param {string} b
@@ -62,3 +62,5 @@ const and = (a, b) => (a === '1' && b === '1' ? '1' : '0');
 const or = (a, b) => (a === '1' || b === '1' ? '1' : '0');
 
 console.log(addBinary('100', '110010'));
+
+export { addBinary };
