@@ -27,10 +27,33 @@ const listFromArray = arr => {
 };
 
 /**
+ * Converts a list to an array.
+ *
+ * @param {ListNode} list
+ */
+const listToArray = list => {
+  if (!list) {
+    return [];
+  }
+  let out = [];
+  let current = list;
+  do {
+    out.push(current.val);
+    current = current.next;
+  } while (current);
+
+  return out;
+};
+
+/**
  * Pretty prints a single linked list of **ListNode** elements to the console.
  * @param {ListNode} list
  */
 const printList = list => {
+  if (!list) {
+    console.log('Empty list.');
+    return;
+  }
   let current = list;
   let str = '';
   do {
@@ -41,4 +64,4 @@ const printList = list => {
   console.log(str);
 };
 
-export { ListNode, listFromArray, printList };
+export { ListNode, listFromArray, listToArray, printList };
