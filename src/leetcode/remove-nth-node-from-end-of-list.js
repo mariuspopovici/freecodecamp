@@ -1,4 +1,4 @@
-import { listFromArray, listToArray, printList, ListNode } from './list';
+import { listFromArray, printList } from './list';
 
 const removeNthFromEnd = (head, n) => {
   let count = 0;

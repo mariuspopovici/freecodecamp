@@ -1,4 +1,4 @@
-import { listFromArray, listToArray, printList, ListNode } from './list';
+import { listFromArray, printList } from './list';
 
 /**
  * Given a sorted linked list, delete all duplicates such that each element appear only once.
