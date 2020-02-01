@@ -14,6 +14,9 @@
  * @param {Array} triangle
  */
 const minimumTotal = triangle => {
+  // Start at the second to last row, then add the smallest element under the current element.
+  // Propagate the minimum sum of current element and adjacent numbers from the lower layer
+  // to the next layer. Eventually the top element of the triangle will have the minimum sum.
   for (let i = triangle.length - 2; i >= 0; i--) {
     for (let j = 0; j < triangle[i].length; j++) {
       triangle[i][j] += Math.min(triangle[i + 1][j], triangle[i + 1][j + 1]);
