@@ -597,8 +597,6 @@ const receivedBytes = [
   26
 ];
 
-const pad8 = number =>
-  number <= 99999999 ? `0000000${number}`.slice(-8) : number;
 const and = (a, b) => (a === '1' && b === '1' ? '1' : '0');
 const or = (a, b) => (a === '1' || b === '1' ? '1' : 0);
 const majority = str => {
@@ -609,7 +607,7 @@ const majority = str => {
 
 const decode = bytes =>
   bytes
-    .map(byte => pad8(byte.toString(2))) // convert each byte to binary
+    .map(byte => byte.toString(2).padStart(8, '0')) // convert each byte to binary
     .join('')
     .match(/.{1,3}/g) // make groups of three
     .map(group => majority(group)) // apply majority and reduce to 1
