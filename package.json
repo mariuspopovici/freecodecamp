@@ -22,7 +22,7 @@
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "nyc": "^14.1.1",
     "prettier": "^1.19.1",
     "riteway": "^6.1.1",
