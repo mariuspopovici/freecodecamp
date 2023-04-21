@@ -69,3 +69,4 @@ dist/
 .firebase/
 .firebaserc
 firebase.*
+src/leetcode/scratch.txt
